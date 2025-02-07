@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Jonathan Okang">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Colour Guessing Game</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="game container">
+            <h1>Color Guessing Game</h1>
+
+            <button id="instructionButton">How to Play</button>
+
+        <div id="instructionModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Game Rules</h2>
+                <p>1. A color box will be displayed at the top.</p>
+                <p>2. You must guess the correct color from six options.</p>
+                <p>3. Click on a color to check your guess.</p>
+                <p>4. If correct, you earn a point!</p>
+                <p>5. Click "New Game" to restart.</p>
+            </div>
+        </div>
+            <!-- Color Box -->
+            <div id="colorBox" class="color-box" data-testid="colorBox"></div>
+    
+            <!-- Color Options -->
+            <div class="options">
+                <button class="color-option" data-testid="colorOption"></button>
+                <button class="color-option" data-testid="colorOption"></button>
+                <button class="color-option" data-testid="colorOption"></button>
+                <button class="color-option" data-testid="colorOption"></button>
+                <button class="color-option" data-testid="colorOption"></button>
+                <button class="color-option" data-testid="colorOption"></button>
+            </div>
+    
+            <!-- Game Status -->
+            <p id="gameStatus" data-testid="gameStatus"></p>
+    
+            <!-- Score Counter -->
+            <p>Score: <span id="score" data-testid="score">0</span></p>
+    
+            <!-- New Game Button -->
+            <button id="newGameButton" data-testid="newGameButton">New Game</button>
+        </div>
+    
+        <script src="script.js"></script>
+    </body>
+</html>
